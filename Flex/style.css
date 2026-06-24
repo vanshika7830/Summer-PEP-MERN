@@ -1,0 +1,16 @@
+.flex-container{
+    display: flex;
+    gap: 4px;
+    flex: 1;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
