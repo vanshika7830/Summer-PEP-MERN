@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    background-color: antiquewhite;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.child{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    align-items:center;
+}
+
+#plus, #minus{
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#plus{
+    background-color: rgb(67, 190, 67);
+    border: none;
+    border-radius: 7px;
+}
+
+#minus{
+    background-color: rgb(255, 29, 29);
+    border: none;
+    border-radius: 7px;
+}
+
+#val{
+    font-size: 30px;
+}
