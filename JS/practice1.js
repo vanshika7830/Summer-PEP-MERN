@@ -45,7 +45,7 @@ const num3 = 7;
 
 */
 // Closure
-
+/*
 function createBankAccount(initialBalance){
     let balance = initialBalance;
     return{
@@ -72,3 +72,54 @@ const account = createBankAccount(1000);
 account.deposit(500);
 account.withdraw(500);
 console.log(account.getBalance());
+*/
+
+
+//Asynchronous JS - Executed by runtime environment or WebAPI - macrotas queue or microstask queue - eventlopp - callstack
+
+// setTimeout Does task after a time
+/*
+console.log("Start");
+setTimeout(()=>{
+    console.log("Hello")
+},100)
+console.log("End")
+*/
+
+// Continue running until we stop it
+/*
+console.log("Start");
+const intervalId = setInterval(()=>{
+    console.log("Hello");
+},1000)
+
+setTimeout(() => {
+    clearInterval(intervalId);
+}, 5000);
+*/
+
+/*
+Call Stack
+    ↓
+Current synchronous code finishes
+    ↓
+Microtask Queue (empty it completely) - Promises
+    ↓
+Macrotask Queue (run one task) - s.
+etTimeOut
+    ↓
+Microtask Queue again
+    ↓
+Next Macrotask */
+
+/*
+console.log("1");
+console.log("2");
+setTimeout(()=>{console.log("3")
+},3000)
+setTimeout(()=>{console.log("4")
+},1000)
+console.log("5");
+setTimeout(()=>{console.log("6")
+},2000)
+*/
