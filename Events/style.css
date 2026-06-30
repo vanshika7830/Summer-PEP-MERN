@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    border: 1px solid black;
+    padding: 40px;
+}
+#child{
+    background-color: rgb(230, 55, 55);
+}
+#parent{
+    background-color: rgb(88, 230, 88);
+}
+#grandParent{
+    background-color: rgb(78, 78, 233);;
+}
