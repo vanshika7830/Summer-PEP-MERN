@@ -1,0 +1,8 @@
+React is a fast JS lib to create reusable user interfaces. In JS everytime we have to create element and manipulate DOM
+Virtual DOM - Light weight copy of real DOM exist in browser, Real DOM - memory
+SPA - Single Page Application
+
+JSX - HTML inside JS
+We can see everything we have inside App.JSX
+App.jsx has only a single parent
+App.jsx - Entry point
