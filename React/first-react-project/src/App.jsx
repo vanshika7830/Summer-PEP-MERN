@@ -1,6 +1,7 @@
 import { useState,useEffect, useRef,useMemo } from 'react'
 import Hello from './Components/Hello';
 import Child from './Components/Child';
+import GrandParent from './Components/GrandParent';
 import RegistrationForm from './Components/RegistrationForm';
 function App() {
   let [count,setCount] = useState(0);
@@ -40,6 +41,8 @@ function App() {
     <button onClick={() => setCount(count-1)}>-</button>
     {count}
     <button onClick={() => setCount(count + 1)}>+</button> <br /> <br />
+    {/* <GrandParent name = "Vanshika"/> */}
+    <GrandParent />
     {/* <Hello />
     <RegistrationForm />
     <Greet name = "John"/> 
@@ -51,6 +54,9 @@ function App() {
 
     {/* <Child name = "Vanshika"/>   Will not rerender when count changes bcz its prop is not changing*/}
      { /*<Child name = {count}/>  Will rerender bcz count changes bcz its prop is changing*/}
+
+
+
     </>
   )
 }
