@@ -1,0 +1,10 @@
+.dashboard-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Dark{
+    background-color: black;
+}
+.Light{
+    background-color: white;
+}

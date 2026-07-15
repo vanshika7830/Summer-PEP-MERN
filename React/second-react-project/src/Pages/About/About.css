@@ -1,0 +1,33 @@
+.about-container {
+  margin: 5px auto;
+  padding: 10px;
+  line-height: 1.8;
+  font-family: Arial, sans-serif;
+}
+
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2563eb;
+}
+
+.about-container h2 {
+  margin-top: 30px;
+  color: #1f2937;
+}
+
+.about-container p {
+  color: #4b5563;
+  font-size: 17px;
+}
+
+.about-container ul {
+  margin-top: 15px;
+  padding-left: 1px;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+  font-size: 17px;
+  list-style-type: none;
+}

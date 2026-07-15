@@ -1,0 +1,37 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #779ad2;
+    padding: 15px 30px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color: rgb(20, 73, 116);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(108, 178, 236);
+    color: white;
+}
