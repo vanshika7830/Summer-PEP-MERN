@@ -5,10 +5,14 @@ import Signup from "./Pages/Signup/Signup"
 import Navbar from "./Components/Navbar/Navbar"
 import Footer from "./Components/Footer/Footer"
 import About from "./Pages/About/About"
+import { useContext } from "react";
+import { ThemeContext } from "./Context/ThemeContext";
+
 
 function App() {
+  const { theme } = useContext(ThemeContext);
   return (
-    <>
+    <div className={theme}>
     <Navbar />
     <Routes>
       <Route path="/" element={<Dashboard />}/>
@@ -17,7 +21,7 @@ function App() {
       <Route path="/signup" element={<Signup/>}/>
     </Routes>
     <Footer />
-    </>
+    </div>
   )
 }
 

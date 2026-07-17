@@ -1,7 +1,12 @@
 .footer-container{
-    background-color: black;
+    background-color: var(--footer-bg);
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .footer-container p{
-    color: white;
+    color: var(--footer-text);
+    margin: 0;
 }

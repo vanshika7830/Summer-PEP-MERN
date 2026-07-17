@@ -1,61 +1,66 @@
-/* Center the signup form */
 .signup-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--page-bg);
+    padding: 20px;
 }
 
-/* Signup card */
+
 .signup-box {
-  width: 380px;
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  text-align: center;
+    width: 380px;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
 }
 
-/* Heading */
+
 .signup-box h2 {
-  margin-bottom: 25px;
-  color: #333;
+    margin-bottom: 25px;
+    color: var(--heading-color);
 }
 
-/* Input fields */
 .signup-box input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 15px;
-  outline: none;
-  box-sizing: border-box;
-  transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: var(--input-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Input focus */
+
+.signup-box input::placeholder {
+    color: var(--text-secondary);
+}
+
+
 .signup-box input:focus {
-  border-color: #4a90e2;
-  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+    border-color: var(--input-focus);
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
 }
 
-/* Button */
 .signup-box button {
-  width: 100%;
-  padding: 12px;
-  background: #4a90e2;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
+    width: 100%;
+    padding: 12px;
+    background: var(--button-bg);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-/* Button hover */
+
 .signup-box button:hover {
-  background: #357abd;
+    background: var(--button-hover);
 }

@@ -1,44 +1,82 @@
-import "./About.css"
+import "./About.css";
+
 function About() {
   return (
     <div className="about-container">
-      <h1>About Us</h1>
 
-      <p>
-        Welcome to <strong>LearnHub</strong>, your trusted online learning
-        platform. We are dedicated to making quality education accessible to
-        everyone, anytime and anywhere.
-      </p>
+      <div className="about-header">
+        <h1>About LearnHub</h1>
+        <p>
+          Empowering learners with quality education, practical skills,
+          and career-focused courses.
+        </p>
+      </div>
 
-      <h2>Our Mission</h2>
-      <p>
-        Our mission is to empower learners by providing high-quality,
-        industry-relevant courses that help students and professionals develop
-        new skills, advance their careers, and achieve their goals.
-      </p>
+      <div className="about-card">
+        <h2>🎯 Our Mission</h2>
+        <p>
+          Our mission is to make quality education accessible to everyone.
+          We provide industry-relevant courses that help students and
+          professionals gain practical knowledge and grow their careers.
+        </p>
+      </div>
 
-      <h2>What We Offer</h2>
-      <ul>
-        <li>Expert-designed courses</li>
-        <li>High-quality video lectures</li>
-        <li>Quizzes and assignments</li>
-        <li>Course completion certificates</li>
-        <li>Learn anytime, anywhere</li>
-        <li>Experienced instructors</li>
-      </ul>
+      <div className="about-card">
+        <h2>📚 What We Offer</h2>
 
-      <h2>Why Choose Us?</h2>
-      <p>
-        We focus on practical learning through real-world projects, interactive
-        content, and continuous support. Whether you're a beginner or an
-        experienced professional, our courses are designed to help you succeed.
-      </p>
+        <div className="features">
+          <div className="feature">
+            <span>👨‍🏫</span>
+            <p>Expert Instructors</p>
+          </div>
 
-      <h2>Our Vision</h2>
-      <p>
-        We envision a world where anyone with an internet connection can access
-        quality education and unlock their full potential.
-      </p>
+          <div className="feature">
+            <span>🎥</span>
+            <p>HD Video Lectures</p>
+          </div>
+
+          <div className="feature">
+            <span>📝</span>
+            <p>Assignments & Quizzes</p>
+          </div>
+
+          <div className="feature">
+            <span>🏆</span>
+            <p>Certificates</p>
+          </div>
+
+          <div className="feature">
+            <span>💻</span>
+            <p>Learn Anywhere</p>
+          </div>
+
+          <div className="feature">
+            <span>🚀</span>
+            <p>Career Growth</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="about-card">
+        <h2>💡 Why Choose LearnHub?</h2>
+
+        <p>
+          We focus on practical learning through real-world projects,
+          interactive lessons, and experienced mentors. Whether you're
+          starting your journey or upgrading your skills, LearnHub helps
+          you achieve your goals with confidence.
+        </p>
+      </div>
+
+      <div className="about-card">
+        <h2>🌍 Our Vision</h2>
+
+        <p>
+          We envision a world where anyone with an internet connection
+          can access world-class education and unlock their true potential.
+        </p>
+      </div>
+
     </div>
   );
 }
