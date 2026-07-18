@@ -1,0 +1,122 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-bg);
+    padding: 15px 30px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--navbar-text);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color: var(--navbar-hover);
+}
+
+/* Use this class instead of styling every button */
+.nav-btn{
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: var(--nav-btn-bg);
+    color: var(--nav-btn-text);
+    transition: 0.3s;
+}
+
+.nav-btn:hover{
+    background: var(--nav-btn-hover);
+    color: var(--nav-btn-hover-text);
+}.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navbar-bg);
+    padding: 15px 40px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--navbar-text);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--navbar-text);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* Underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--navbar-text);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: var(--navbar-hover);
+}
+
+/* Theme Button */
+.theme-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--navbar-text);
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 0;
+}
+
+.theme-btn:hover {
+    transform: rotate(20deg) scale(1.15);
+    color: #FFD43B;
+}
+
+.theme-btn:active {
+    transform: scale(0.9);
+}
+
+.theme-btn svg {
+    pointer-events: none;
+}
